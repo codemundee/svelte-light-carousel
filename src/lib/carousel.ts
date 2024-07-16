@@ -71,7 +71,6 @@ export const dragScroll = (
 			if (node.scrollLeft > node.scrollWidth - node.clientWidth - slideWidth / 2) {
 				return slideCount - slidesPerView;
 			}
-			console.log('here', node.scrollLeft, slideWidth);
 			return Math.ceil((node.scrollLeft - slideWidth / 3) / slideWidth);
 		} else {
 			return Math.floor(node.scrollTop / slideHeight);
